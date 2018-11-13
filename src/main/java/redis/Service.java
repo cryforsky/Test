@@ -30,6 +30,7 @@ public class Service {
         // 在borrow一个jedis实例时，是否需要验证，若为true，则所有jedis实例均是可用的
         config.setTestOnBorrow(true);
         pool = new JedisPool(config, "127.0.0.1", 6379, 3000);
+        System.out.println(1);
     }
 
     public void seckill() {
